@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +14,14 @@
             padding: 0;
             color: #333;
         }
+
         header {
             text-align: center;
             padding: 2rem 1rem;
             background: linear-gradient(90deg, #a60000, #ff4d4d);
             color: white;
         }
+
         .container {
             max-width: 1000px;
             margin: auto;
@@ -27,18 +30,21 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
+
         .service {
             background: white;
             border-radius: 12px;
             padding: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: 0.3s;
             text-align: center;
         }
+
         .service:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
         }
+
         .service img {
             width: 100%;
             height: 180px;
@@ -46,27 +52,35 @@
             border-radius: 10px;
             margin-bottom: 1rem;
         }
+
         .service h2 {
             color: #a60000;
             margin-bottom: 0.8rem;
         }
+
         ul {
             margin: 0;
             padding-left: 20px;
             text-align: left;
         }
+
         .note {
             color: red;
             font-size: 0.9rem;
             margin-top: 0.5rem;
             text-align: left;
-            text-indent: -3.2em;
-            /* ขยับบรรทัดแรกไปซ้าย */
-            padding-left: 3.2em;
-            /* ดันทุกบรรทัดเข้ามาให้ตรงกัน */
+            display: inline-block;
+            /* ป้องกันไม่ให้โดน text-align center ของ parent */
+        }
+
+        .note-indent {
+            display: inline-block;
+            margin-left: 6.5em;
+            /* ปรับค่าให้ตรงกับคำว่า 'ราคา' */
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>บริการของเรา</h1>
@@ -75,7 +89,8 @@
     <div class="container">
 
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="ประชุม">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+                alt="ประชุม">
             <h2>บริการให้เช่าสำหรับจัดประชุม</h2>
             <ul>
                 <li>อบรม สัมมนาระดับองค์กร, สำนักงานทั่วไป</li>
@@ -111,7 +126,7 @@
         </div>
 
         <div class="service">
-             <img src="images/cleaning.jpg" alt="แม่บ้าน">
+            <img src="images/cleaning.jpg" alt="แม่บ้าน">
             <h2>บริการงานแม่บ้านทำความสะอาด</h2>
             <ul>
                 <li>ทำความสะอาดประจำสัปดาห์ </li>
@@ -123,5 +138,5 @@
 
     </div>
 </body>
-</html>
 
+</html>
